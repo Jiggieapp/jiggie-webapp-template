@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	body{
+		margin: 0; padding: 0;
+		font-family: Lato, Helvetica, Arial;
+		width: 100%;
+		background: #fff;
+	}
+
+	#header{
+		background: #f3f3f3;
+		padding: 10px;
+	}
+
+	#header h1{
+		display: block;
+		float: left;
+		margin: 0px 0px 0px 15px; padding: 0;
+		width: 44px; height: 53px;
+		background: url("https://s3-ap-southeast-1.amazonaws.com/jiggieimages/webapp/logo-small-min.png") top left no-repeat;
+		font-size: 0px;
+	}
+
+	#account_holder{
+		display: block;
+		float: right;
+	}
+
+	#account_holder ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	#account_holder ul li{
+		float: left;
+	}
+	#account_holder img{
+		width: 50px;
+		border-radius: 25px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+	}
+
+	#claim{
+		text-decoration: none;
+	}
+	#claim{
+		background: #a304cf;
+		display: block;
+		width: 150px;
+		padding: 10px;
+		color: #fff;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		text-align: center;
+	}
+
+	#content{
+		padding: 20px;
+	}
+
+	#footer{
+		padding: 20px;
+	}
+
+	.full-name{
+		padding: 15px 10px 0px 0px;
+	}
+	.clear{
+		clear: both;
+	}
+	.left{
+		float: left;
+	}
+	.right{
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="inner_container">
+			<div id="header">
+				<h1>Jiggie</h1>
+				<div id="account_holder">
+					<ul>
+						<li class="full-name">{{inviter_full_name}}</li>
+						<li><img src="https://scontent.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/480660_718773198151190_40583195_n.jpg?oh=969263865c284d8dd59878d3adf4b0d8&oe=57396E68" title="Profile Picture" /></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content" class="clear">
+				<p>
+					Hi {{invitee_first_name}},
+				</p>
+				<p>
+					I just sent you Rp.50,000 in free credit to use on concert and event tickets. Join me on Jiggie to claim it before it expires.
+				</p>
+				<p>
+					{{inviter_full_name}}
+				</p>
+				<a id="claim" href="#" title="Claim free credits">Claim Free Credits</a>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
