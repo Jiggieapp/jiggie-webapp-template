@@ -29,12 +29,9 @@ h1#logo{
 #profile{
 	width: 121px; height: 121px;
 	margin: 20px auto;
-}
-#profile img{
-	width: 121px;
-	border-radius: 60.5px;
-	-webkit-border-radius: 60.5px;
-	-moz-border-radius: 60.5px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 }
 
 #message{
