@@ -9,10 +9,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		var imgPath = "https://s3-ap-southeast-1.amazonaws.com/jiggieprofileimage/1462883172488.jpg"
+		// var imgPath = "https://s3-ap-southeast-1.amazonaws.com/jiggieprofileimage/1462883172488.jpg"
+		var imgPath = "https://graph.facebook.com/10153235258823994/picture?width=1000&amp;height=1000"
 
 		$('<img src="' + imgPath + '">').load(function(){
-			var ratio = (this.height >= this.width) ? '121px auto' : 'auto 121px'
+			var ratio = ''
+			if (this.height > this.width)
+				ratio = '121px auto'
+			else if (this.height < this.width)
+				ratio = 'auto 121px'
+			else
+				ratio = '121px 121px'
 
 			$('#profile').css({
 				'background' : 'url("' + imgPath + '") 0% 0% no-repeat',
